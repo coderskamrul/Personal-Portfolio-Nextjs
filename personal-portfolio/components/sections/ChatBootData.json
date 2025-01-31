@@ -1,0 +1,192 @@
+[
+  {
+    "patterns": [
+      "\\b(hi|hello|hey)\\b",
+      "\\bgreetings\\b"
+    ],
+    "response": "Hello! I'm an AI assistant for Md. Kamrul Hasan. How can I help you today?"
+  },
+  {
+    "patterns": ["\\bname\\b", "who (are|is) (you|kamrul)", "\\bfull name\\b"],
+    "response": "My name is Md. Kamrul Hasan."
+  },
+  {
+    "patterns": ["\\bage\\b", "\\bhow old\\b", "\\bborn\\b"],
+    "response": "I'm a young professional software engineer."
+  },
+  {
+    "patterns": ["\\bemail\\b", "\\bcontact\\b", "\\breach\\b"],
+    "response": "You can reach me at mdkamrul2058@gmail.com or +880 1635499809."
+  },
+  {
+    "patterns": [
+      "\\blocation\\b",
+      "\\bwhere.*from\\b",
+      "\\bcountry\\b",
+      "\\bcity\\b"
+    ],
+    "response": "I'm from Dhaka, Bangladesh."
+  },
+  {
+    "patterns": [
+      "\\beducation\\b",
+      "\\bstudy\\b",
+      "\\bdegree\\b",
+      "\\bcgpa\\b",
+      "\\buniversity\\b"
+    ],
+    "response": "I have a B.Sc. in Computer Science & Engineering from IUBAT with a CGPA of 3.55 out of 4.00."
+  },
+  {
+    "patterns": ["\\bexperience\\b", "\\bwork\\b", "\\bjob\\b", "\\bcareer\\b"],
+    "response": "I'm a Software Engineer at WPXPO with 1.7+ years of experience, focusing on full-stack development and AI-based solutions."
+  },
+  {
+    "patterns": [
+      "\\bskills?\\b",
+      "\\btechnolog(y|ies)\\b",
+      "what.*know",
+      "\\bstack\\b"
+    ],
+    "response": "I'm skilled in:\n• Frontend: React, Next.js, TypeScript\n• Backend: Node.js, Express\n• Databases: MongoDB, MySQL\n• Languages: JavaScript, Python, C++\n• Tools: Git, Docker, AWS"
+  },
+  {
+    "patterns": [
+      "\\bachievements?\\b",
+      "\\bawards?\\b",
+      "\\baccomplishments?\\b"
+    ],
+    "response": "My notable achievements include:\n• ICPC Asia West Finalist\n• 1st Runner-Up in multiple programming contests\n• 1500+ problems solved across platforms\n• Codeforces rating: 1325\n• Codechef: 3★ (rating 1627)"
+  },
+  {
+    "patterns": [
+      "\\bprojects?\\b",
+      "\\bportfolio\\b",
+      "\\bbuilt\\b",
+      "\\bcreated\\b"
+    ],
+    "response": "I've worked on several projects including:\n• React Organizational Service Provider\n• Task Manager with JWT\n• Coffee Shop Website\n• GFP-GAN Image Reconstruction Research"
+  },
+  {
+    "patterns": [
+      "\\bprogramming\\b",
+      "\\bDSA\\b",
+      "\\bOOP\\b",
+      "\\bproblem solving\\b"
+    ],
+    "response": "I have 4+ years of competitive programming experience, solving 1500+ problems on platforms like Codeforces, LeetCode, and CodeChef."
+  },
+  {
+    "patterns": ["\\bcontact\\b", "\\breach\\b", "\\bemail\\b"],
+    "response": "Feel free to email me at mdkamrul2058@gmail.com or call me at +880 1635499809."
+  },
+  {
+    "patterns": ["\\bICPC\\b", "\\bcontests\\b", "\\bprogramming events\\b"],
+    "response": "I've participated in multiple ICPC Asia Regional contests and ranked as a finalist in 2023."
+  },
+  {
+    "patterns": [
+      "\\btasks\\b",
+      "\\bteam\\b",
+      "\\bmanage\\b",
+      "\\bprojects\\b"
+    ],
+    "response": "I specialize in task and project management using tools like Nifty, alongside building robust software systems."
+  },
+  {
+    "patterns": ["\\btrain(ing|er)\\b", "\\bmentor\\b", "\\bguidance\\b"],
+    "response": "I've served as a programming trainer and mentor, organizing contests and training students in DSA and problem-solving."
+  },
+  {
+    "patterns": ["\\blanguages\\b", "\\bcode\\b", "\\bprogram\\b"],
+    "response": "I'm proficient in languages like C, C++, Python, JavaScript, PHP, and TypeScript."
+  },
+  {
+    "patterns": ["\\bAI\\b", "\\bresearch\\b", "\\bmachine learning\\b"],
+    "response": "I'm currently working on AI-based research, focusing on image reconstruction using techniques like GFP-GAN."
+  },
+  {
+    "patterns": ["\\bteam lead\\b", "\\bmanager\\b", "\\bleadership\\b"],
+    "response": "I led multiple programming teams to contests like ICPC and served as Assistant Manager of the Programming Society at IUBAT."
+  },
+  {
+    "patterns": ["\\bcareer goals\\b", "\\bobjective\\b", "\\bfuture\\b"],
+    "response": "I aim to utilize my software engineering skills to solve real-world problems and contribute to innovative projects."
+  },
+  {
+    "patterns": ["\\bhobbies\\b", "\\binterests\\b", "\\bfree time\\b"],
+    "response": "In my free time, I enjoy competitive programming, reading tech blogs, and exploring advancements in AI and software engineering."
+  },
+  {
+    "patterns": ["\\bGitHub\\b", "\\bportfolio\\b", "\\bcoding profile\\b"],
+    "response": "You can check out my work on GitHub at https://github.com/Coderskamrul."
+  },
+  {
+    "patterns": ["\\bcurrent projects\\b", "\\bongoing work\\b", "\\bnow\\b"],
+    "response": "I'm currently working on an AI-based e-commerce analytics project to optimize sales and user experiences."
+  },
+  {
+    "patterns": ["\\bplatforms\\b", "\\bcoding sites\\b", "\\branking\\b"],
+    "response": "I'm active on coding platforms like Codeforces, LeetCode, and CodeChef, with competitive rankings in each."
+  },
+  {
+    "patterns": ["\\bIslamic way\\b", "\\blife goals\\b", "\\bvalues\\b"],
+    "response": "I strive to live by Islamic values and seek a balanced life aligned with my faith and career aspirations."
+  },
+  {
+    "patterns": ["\\bteamwork\\b", "\\bcollaboration\\b", "\\bcooperation\\b"],
+    "response": "I value teamwork and enjoy collaborating with diverse teams to achieve project goals efficiently."
+  },
+  {
+    "patterns": ["\\bAWS\\b", "\\bcloud computing\\b", "\\bdeployment\\b"],
+    "response": "I'm exploring AWS for cloud solutions, focusing on EC2, S3, and deployment pipelines."
+  },
+  {
+    "patterns": ["\\bfuture aspirations\\b", "\\bdream project\\b", "\\bnext step\\b"],
+    "response": "I aspire to work on AI-driven solutions that address real-world challenges and make a global impact."
+  },
+  {
+    "patterns": ["\\bvolunteer\\b", "\\bsocial work\\b", "\\bcommunity\\b"],
+    "response": "I actively participate in community-driven programming events and volunteer to mentor aspiring programmers."
+  },
+  {
+    "patterns": ["\\bcode challenges\\b", "\\bcoding marathons\\b", "\\bhackathons\\b"],
+    "response": "I enjoy participating in coding hackathons and marathons, showcasing problem-solving abilities under time constraints."
+  },
+  {
+    "patterns": ["\\bframeworks\\b", "\\blibraries\\b", "\\btools\\b"],
+    "response": "I frequently use frameworks and libraries like React.js, Tailwind CSS, Express.js, and Bootstrap in my projects."
+  },
+  {
+    "patterns": ["\\bnext.js\\b", "\\bSSR\\b", "\\bfrontend\\b"],
+    "response": "I have extensive experience with Next.js for server-side rendering and building performant frontends."
+  },
+  {
+    "patterns": ["\\bnational contests\\b", "\\bprogramming accolades\\b", "\\bcompetitive history\\b"],
+    "response": "I have participated in numerous national contests, earning accolades and honing my competitive programming skills."
+  },
+  {
+    "patterns": ["\\btech blogs\\b", "\\bwritings\\b", "\\bknowledge sharing\\b"],
+    "response": "I write tech blogs to share my insights on software engineering, AI, and programming concepts."
+  },
+  {
+    "patterns": ["\\bhow are you\\b", "\\bhow about you\\b"],
+    "response": "I'm doing great! How can I assist you today?"
+  },
+  {
+    "patterns": ["\\b(cv|resume|curriculum vitae)\\b"],
+    "response": "You can view or download my CV from the top of the page using the download button on the right side of the menu bar."
+  },
+  {
+    "patterns": ["\\bare you single\\b"],
+    "response": "I am single."
+  },
+  {
+    "patterns": ["\\bdo you have (a )?(gf|girlfriend)\\b"],
+    "response": "I do not have a girlfriend."
+  },
+  {
+    "patterns": ["\\bare you married\\b"],
+    "response": "I am not married."
+  }
+]
