@@ -24,7 +24,7 @@ export default function SingleBlog({ params }: { params: { slug: string } }) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="container px-4 md:px-6 py-10"
+        className="container px-4 md:px-6 py-10 m-auto"
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Main Content */}
@@ -85,6 +85,43 @@ export default function SingleBlog({ params }: { params: { slug: string } }) {
                 className="prose prose-lg dark:prose-invert max-w-none"
                 dangerouslySetInnerHTML={{ __html: post.content }}
               />
+              <br />
+              {
+                post?.sampleCodeOne && (
+                  <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto">
+                    <code className="whitespace-pre">{post?.sampleCodeOne}</code>
+                </pre>
+                )
+              }
+              <br />
+
+              {
+                post?.sampleCodeTwo && (
+                  <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto">
+                    <code className="whitespace-pre">{post?.sampleCodeTwo}</code>
+                </pre>
+                )
+              }
+              <br />
+              {
+                post?.sampleCodeThree && (
+                  <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto">
+                    <code className="whitespace-pre">{post?.sampleCodeThree}</code>
+                </pre>
+                )
+              }
+              <br />
+
+              {
+                post?.finalThoughts && (
+                  <div 
+                    className="prose prose-lg dark:prose-invert max-w-none"
+                    dangerouslySetInnerHTML={{ __html: post.finalThoughts }}
+                  />
+                )
+              }
+              <br />
+               
             </motion.div>
           </div>
 
