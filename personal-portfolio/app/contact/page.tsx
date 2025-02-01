@@ -58,7 +58,7 @@ export default function ContactPage() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="container px-4 md:px-6 py-10"
+        className="container px-4 md:px-6 py-10 m-auto"
       >
         <div className="max-w-5xl mx-auto">
           <motion.div

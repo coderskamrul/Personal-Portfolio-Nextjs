@@ -2,6 +2,13 @@ import { Code2, Facebook, Github, Linkedin, Mail, MapPin, Phone, Twitter } from 
 import Link from 'next/link'
 
 const navigation = {
+  codding: [
+    { name: 'Codeforces', href: '/' },
+    { name: 'Codechef', href: '/' },
+    { name: 'Leetcode', href: '/' },
+    { name: 'Stopstalk', href: '/' },
+    { name: 'Hackkerank', href: '/' },
+  ],
   main: [
     { name: 'Blog', href: '/blog' },
     { name: 'Skills', href: '/skills' },
@@ -12,22 +19,22 @@ const navigation = {
   social: [
     {
       name: 'GitHub',
-      href: '#',
+      href: 'https://github.com/coderskamrul',
       icon: Github,
     },
     {
       name: 'LinkedIn',
-      href: '#',
+      href: 'https://www.linkedin.com/in/coderskamrul/',
       icon: Linkedin,
     },
     {
       name: 'Twitter',
-      href: '#',
+      href: 'https://x.com/CodersKamrul',
       icon: Twitter,
     },
     {
       name: 'Facebook',
-      href: '#',
+      href: 'https://www.facebook.com/CodersKamrul/',
       icon: Facebook,
     },
   ],
@@ -36,39 +43,35 @@ const navigation = {
 export default function Footer() {
   return (
     <footer className="bg-background">
-      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8 m-auto">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           {/* Logo and About */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
               <Code2 className="h-8 w-8" />
               <span className="font-bold text-xl">Portfolio</span>
             </Link>
-            <p className="text-muted-foreground">
-              Full Stack Developer specializing in modern web technologies and blockchain development.
-            </p>
+            <p className="text-muted-foreground text-justify">
+            I have solved 1,500+ problems focused on Data Structures and Algorithms (DSA) and Object-Oriented Programming (OOP). I have actively participated in national and international programming contests, including the prestigious ACM ICPC, achieving recognition as an ICPC Asia West Finalist in 2023.            </p>
           </div>
 
-          {/* Contact Info */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Contact Info</h3>
-            <div className="space-y-2">
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Mail className="h-4 w-4" />
-                <span>contact@example.com</span>
-              </div>
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
-              </div>
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <MapPin className="h-4 w-4" />
-                <span>New York, NY</span>
-              </div>
-            </div>
-          </div>
+       
 
           {/* Quick Links */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold">Judge Links</h3>
+            <nav className="flex flex-col space-y-2">
+              {navigation.codding.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="text-muted-foreground hover:text-primary"
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+          </div>
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Quick Links</h3>
             <nav className="flex flex-col space-y-2">
@@ -83,6 +86,26 @@ export default function Footer() {
               ))}
             </nav>
           </div>
+
+             {/* Contact Info */}
+             <div className="space-y-4">
+            <h3 className="text-lg font-semibold">Contact Info</h3>
+            <div className="space-y-2">
+              <div className="flex items-center gap-2 text-muted-foreground">
+                <Mail className="h-4 w-4" />
+                <span>mdkamrul2058@gmail.com</span>
+              </div>
+              <div className="flex items-center gap-2 text-muted-foreground">
+                <Phone className="h-4 w-4" />
+                <span>+880 1635499809</span>
+              </div>
+              <div className="flex items-center gap-2 text-muted-foreground">
+                <MapPin className="h-4 w-4" />
+                <span>Uttara, Dhaka, Bangladesh</span>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <div className="mt-10 flex justify-center space-x-10">

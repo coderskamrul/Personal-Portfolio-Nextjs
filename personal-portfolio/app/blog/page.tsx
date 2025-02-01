@@ -29,7 +29,7 @@ export default function BlogPage() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="container px-4 md:px-6 py-10"
+        className="container px-4 md:px-6 py-10 m-auto"
       >
         <h1 className="text-4xl font-bold text-center mb-12">Blog</h1>
         

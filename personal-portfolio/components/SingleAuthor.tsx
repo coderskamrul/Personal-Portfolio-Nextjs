@@ -15,7 +15,6 @@ export default function SingleAuthor({ params }: { params: { slug: string } }) {
   const authorPosts = blogPosts.filter(post => 
     post.author.toLowerCase() === authorName.toLowerCase()
   )
-
   return (
     <div className="min-h-screen pt-20">
       <motion.div
@@ -25,10 +24,10 @@ export default function SingleAuthor({ params }: { params: { slug: string } }) {
         className="container px-4 md:px-6 py-10"
       >
         <div className="max-w-4xl mx-auto">
-          <div className="bg-card rounded-lg p-8 mb-12">
+          <div className="bg-card rounded-lg p-8 mb-12 border hover:shadow-lg">
             <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
               <Image
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?fit=crop&w=200&h=200"
+                src="https://i.ibb.co.com/whRrmF0J/hmdkamrul-profile.jpg"
                 alt={authorName}
                 width={200}
                 height={200}
@@ -37,16 +36,16 @@ export default function SingleAuthor({ params }: { params: { slug: string } }) {
               <div>
                 <h1 className="text-3xl font-bold mb-4">{authorName}</h1>
                 <p className="text-muted-foreground mb-6">
-                  Full Stack Developer specializing in modern web technologies and blockchain development.
+                Full Stack Software Engineer & Programming Instructor.
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <Mail className="h-4 w-4" />
-                    <span>contact@example.com</span>
+                    <span>mdkamrul2058@gmail.com</span>
                   </div>
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <MapPin className="h-4 w-4" />
-                    <span>New York, USA</span>
+                    <span>Uttara, Dhaka</span>
                   </div>
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <User className="h-4 w-4" />

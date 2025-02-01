@@ -44,7 +44,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center">
           <a href="/" className="flex items-center">
-            <span className="text-xl font-semibold text-foreground">&lt;/&gt; HmdKamrul</span>
+            <span className="text-xl font-semibold text-foreground">&lt;/&gt; Hmd<span className='text-orange-600'>Kamrul</span></span>
           </a>
         </div>
 
