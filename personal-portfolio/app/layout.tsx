@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { Suspense } from 'react'
 import Loading from '@/components/loading'
+import PortfolioAIChat from '@/components/sections/ChatBoot'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -33,6 +34,7 @@ export default function RootLayout({
             <Suspense fallback={<Loading />}>
               <main className="flex-grow">{children}</main>
             </Suspense>
+            <PortfolioAIChat />
             <Footer />
           </div>
         </ThemeProvider>

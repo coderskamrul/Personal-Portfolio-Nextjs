@@ -8,7 +8,6 @@ import ProjectsSection from '@/components/sections/ProjectsSection'
 import BlogSection from '@/components/sections/BlogSection'
 import { Suspense } from 'react'
 import Loading from '@/components/loading'
-import PortfolioAIChat from '@/components/sections/ChatBoot'
 
 export default function Home() {
   return (
@@ -22,7 +21,6 @@ export default function Home() {
         <BlogSection />
         <AwardsSection />
         <CertificationsSection />
-        <PortfolioAIChat />
       </Suspense>
     </div>
   )

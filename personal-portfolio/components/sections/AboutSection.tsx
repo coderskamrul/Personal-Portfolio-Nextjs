@@ -179,14 +179,11 @@ const ProfileCard = () => {
                     <span className="px-4 py-1.5 bg-primary/5 border border-primary/20 rounded-full text-sm">Git</span>
                     <span className="px-4 py-1.5 bg-primary/5 border border-primary/20 rounded-full text-sm">Docker</span>
                     <span className="px-4 py-1.5 bg-primary/5 border border-primary/20 rounded-full text-sm">Figma</span>
-                    <span className="px-4 py-1.5 bg-primary/5 border border-primary/20 rounded-full text-sm flex items-center gap-2">
-                      <Image className="w-3 h-3" /> Photoshop
-                    </span>
+                    <span className="px-4 py-1.5 bg-primary/5 border border-primary/20 rounded-full text-sm flex items-center gap-2">Photoshop</span>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>

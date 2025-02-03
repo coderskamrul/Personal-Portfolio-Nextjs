@@ -111,7 +111,7 @@ const portfolioData = {
   // ... (previous portfolio data remains the same)
 };
 
-const TypingAnimation = ({ text, shouldType }) => {
+const TypingAnimation = ({ text, shouldType }: { text: string; shouldType: boolean }) => {
   const [displayText, setDisplayText] = useState('');
   const [isTyping, setIsTyping] = useState(false);
 
@@ -167,7 +167,7 @@ const PortfolioAIChat = () => {
   const [inputValue, setInputValue] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const [lastMessageIndex, setLastMessageIndex] = useState(-1);
-  const messagesEndRef = useRef(null);
+  const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(messages));
@@ -185,7 +185,12 @@ const PortfolioAIChat = () => {
     scrollToBottom();
   }, [messages]);
 
-  const getResponse = (input) => {
+  interface ResponsePattern {
+    patterns: RegExp[];
+    response: string;
+  }
+
+  const getResponse = (input: string): string => {
     const lowercaseInput = input.toLowerCase();
     
     // Check for matches in response patterns
@@ -202,7 +207,7 @@ const PortfolioAIChat = () => {
     if (!inputValue.trim()) return;
 
     const userMessage = { type: 'user', content: inputValue };
-    setMessages(prev => [...prev, userMessage]);
+    setMessages((prev: { type: string; content: string }[]) => [...prev, userMessage]);
     setInputValue('');
     setIsTyping(true);
     setLastMessageIndex(messages.length + 1);
@@ -210,7 +215,7 @@ const PortfolioAIChat = () => {
     // Simulate AI thinking time
     setTimeout(() => {
       const botMessage = { type: 'bot', content: getResponse(inputValue) };
-      setMessages(prev => [...prev, botMessage]);
+      setMessages((prev: { type: string; content: string }[]) => [...prev, botMessage]);
       setIsTyping(false);
     }, 500);
   };
@@ -219,10 +224,15 @@ const PortfolioAIChat = () => {
     "Skills", "Experience", "Education", "Achievements"
   ];
 
-  const handleTagClick = (tag) => {
+  interface Message {
+    type: 'user' | 'bot';
+    content: string;
+  }
+
+  const handleTagClick = (tag: string) => {
     const response = getResponse(tag.toLowerCase());
     setLastMessageIndex(messages.length + 1);
-    setMessages(prev => [
+    setMessages((prev: Message[]) => [
       ...prev,
       { type: 'user', content: `Tell me about your ${tag}` },
       { type: 'bot', content: response }
@@ -281,27 +291,27 @@ const PortfolioAIChat = () => {
         <>
           {/* Messages */}
           <div className={`flex-1 overflow-y-auto p-4 space-y-4 ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
-            {messages.map((message, index) => (
+            {messages.map((message: Message, index: number) => (
               <div
                 key={index}
                 className={`flex ${message.type === 'user' ? 'justify-end' : 'justify-start'}`}
               >
-                <div
-                  className={`max-w-[80%] p-3 rounded-lg ${
-                    message.type === 'user'
-                      ? isDarkMode ? 'bg-blue-600 text-white' : 'bg-blue-600 text-white'
-                      : isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-100 text-gray-800'
-                  }`}
-                >
-                  {message.type === 'bot' ? (
-                    <TypingAnimation 
-                      text={message.content} 
-                      shouldType={index === lastMessageIndex}
-                    />
-                  ) : (
-                    message.content
-                  )}
-                </div>
+              <div
+                className={`max-w-[80%] p-3 rounded-lg ${
+                message.type === 'user'
+                  ? isDarkMode ? 'bg-blue-600 text-white' : 'bg-blue-600 text-white'
+                  : isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-100 text-gray-800'
+                }`}
+              >
+                {message.type === 'bot' ? (
+                <TypingAnimation 
+                  text={message.content} 
+                  shouldType={index === lastMessageIndex}
+                />
+                ) : (
+                message.content
+                )}
+              </div>
               </div>
             ))}
             {isTyping && (
