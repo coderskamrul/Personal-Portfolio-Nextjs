@@ -26,6 +26,7 @@ const Navbar = () => {
   }, []);
 
   const menuItems = [
+    { label: 'Home', href: '/' },
     { label: 'Blog', href: '/blog' },
     { label: 'Skills', href: '/skills' },
     { label: 'Projects', href: '/projects' },

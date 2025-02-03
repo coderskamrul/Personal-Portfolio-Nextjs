@@ -59,11 +59,11 @@ const HeroSection = () => {
 
             <div className="flex gap-4">
               <button className="bg-purple-600 dark:bg-purple-500 text-white px-6 py-3 rounded-full hover:bg-purple-700 dark:hover:bg-purple-600 transition duration-300 flex items-center gap-2">
-                <Laptop className="w-5 h-5" />
+                {/* <Laptop className="w-5 h-5" /> */}
                 Hire Me
               </button>
               <button className="border-2 border-purple-600 dark:border-purple-400 text-purple-600 dark:text-purple-400 px-6 py-3 rounded-full hover:bg-purple-50 dark:hover:bg-purple-900/50 transition duration-300 flex items-center gap-2">
-                <Code className="w-5 h-5" />
+                {/* <Code className="w-5 h-5" /> */}
                 View Projects
               </button>
             </div>

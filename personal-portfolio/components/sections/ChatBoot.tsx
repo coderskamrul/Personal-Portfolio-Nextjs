@@ -221,7 +221,7 @@ const PortfolioAIChat = () => {
   };
 
   const suggestionTags = [
-    "Skills", "Experience", "Education", "Achievements"
+    "Skills", "Experience", "Edu...", "Achievements"
   ];
 
   interface Message {
@@ -329,7 +329,7 @@ const PortfolioAIChat = () => {
           </div>
 
           {/* Suggestion Tags */}
-          <div className={`px-4 py-2 flex gap-2 justify-between ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
+          <div className={`px-4 py-2 flex gap-1 flex-wrap ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
             {suggestionTags.map((tag) => (
               <button
                 key={tag}

@@ -66,13 +66,14 @@ export default function ProjectsPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="flex justify-center gap-4 mb-12"
+          className="flex justify-center gap-4 mb-12 flex-wrap"
         >
           {categories.map((category) => (
             <Button
               key={category}
               variant={selectedCategory === category ? "default" : "outline"}
               onClick={() => setSelectedCategory(category)}
+              className="mb-2"
             >
               {category}
             </Button>

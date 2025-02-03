@@ -5,35 +5,27 @@ import { motion } from "framer-motion"
 const skillCategories = [
   {
     title: "Languages",
-    skills: ["C++", "Python", "JavaScript", "TypeScript", "Solidity"],
+    skills: ["C", "C++","Java","C#", "Python", "JavaScript", "TypeScript", "PHP" ],
   },
   {
     title: "Frontend",
-    skills: ["HTML", "CSS", "React", "Next.js", "Chakra UI"],
+    skills: ["HTML", "CSS", "React", "Redux", "Next.js", "Tailwind CSS", "Bootstrap", "Material-UI"],
   },
   {
     title: "Backend",
-    skills: ["FastAPI", "Express.js", "Node.js", "PostgreSQL", "Firebase", "NoSQL"],
-  },
-  {
-    title: "Blockchain/Smart Contracts",
-    skills: ["Solidity", "Web3.js", "Web3.py", "Foundry", "Remix", "Hardhat", "Ethers", "Mocha", "ChainLink"],
+    skills: ["FastAPI", "Express.js", "Node.js", "MongoDB", "Firebase", "NoSQL"],
   },
   {
     title: "DevOps",
-    skills: ["Git", "Docker", "Kubernetes", "Github CI/CD", "Linux", "ArgoCD", "Datadog", "Sentry"],
-  },
-  {
-    title: "QA",
-    skills: ["Pytest", "Jest", "Mocha", "Chai", "Load Testing", "K6"],
+    skills: ["Git", "Docker", "Github CI/CD", "Linux"],
   },
   {
     title: "Data Science",
-    skills: ["Pandas", "Numpy", "Matplotlib", "Jupyter Notebooks", "SQL"],
+    skills: ["Pandas", "Numpy", "Jupyter Notebooks", "SQL"],
   },
   {
     title: "Others",
-    skills: ["Latex", "Markdown", "Vercel", "Web Scraping"],
+    skills: ["Vercel", "Web Scraping"],
   },
 ]
 
