@@ -41,9 +41,59 @@ const projects = [
     category: "Full Stack",
     // category: "AI/ML",
   },
+  {
+    id: "4",
+    title: "React Task Manager with JWT",
+    description: "A full-stack task manager application with JWT authentication and real-time updates.",
+    image: "https://i.ibb.co.com/6J1nhBfH/Task-manager-Project-view-02.png",
+    technologies: ["React", "Express", "Tailwind CSS", "Node.js", "Mongodb", "Socket.io"],
+    liveUrl: "https://github.com/coderskamrul/React-Task-Manager-With-JWT",
+    githubUrl: "https://github.com/coderskamrul/React-Task-Manager-With-JWT",
+    category: "React",
+  },
+  {
+    id: "5",
+    title: "React Personal Portfolio",
+    description: "A personal portfolio website built with React, CSS, and Framer Motion.",
+    image: "https://i.ibb.co.com/n87Ppft0/portfolio-react.jpg",
+    technologies: ["React", "Express", "Tailwind CSS", "Node.js", "Mongodb", "Socket.io"],
+    liveUrl: "https://hmdkamrul.netlify.app",
+    githubUrl: "https://github.com/coderskamrul/react-portfolios",
+    category: "React",
+  },
+  {
+    id: "6",
+    title: "Blood Bank Management System with Java",
+    description: "A blood bank management system with Java, MySQL, and JavaFX.",
+    image: "https://i.ibb.co.com/v4XRHwBC/bloodbank.png",
+    technologies: ["Java", "JavaFX", "MySQL"],
+    liveUrl: "https://github.com/coderskamrul/Blood-Bank-Management",
+    githubUrl: "https://github.com/coderskamrul/Blood-Bank-Management",
+    category: "Java",
+  },
+  {
+    id: "7",
+    title: "Hostel Management System Using JavaFX",
+    description: "A hostel management system with Java, MySQL, and JavaFX.",
+    image: "https://i.ibb.co.com/KxXFSXCs/hostel-managment-java.png",
+    technologies: ["Java", "JavaFX", "MySQL"],
+    liveUrl: "https://github.com/coderskamrul/Hostel-Management-System-Using-JavaFX",
+    githubUrl: "https://github.com/coderskamrul/Hostel-Management-System-Using-JavaFX",
+    category: "Java",
+  },
+  {
+    id: "8",
+    title: "E-Commerce Responsive Website with PHP",
+    description: "A fully functional e-commerce website with PHP, MySQL, and Bootstrap.",
+    image: "https://i.ibb.co.com/5xTRRNMY/ecommerce-with-php.png",
+    technologies: ["PHP", "MySQL", "Bootstrap"],
+    liveUrl: "https://github.com/coderskamrul/electronics-ecommerce-",
+    githubUrl: "https://github.com/coderskamrul/electronics-ecommerce-",
+    category: "PHP",
+  },
 ]
 
-const categories = ["All", "Full Stack", "Blockchain", "AI/ML"]
+const categories = ["All", "Full Stack", "React", "Java", "PHP"]
 
 export default function ProjectsPage() {
   const [selectedCategory, setSelectedCategory] = useState("All")

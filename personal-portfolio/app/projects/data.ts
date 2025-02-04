@@ -113,8 +113,190 @@ export const projects = [
       "https://i.ibb.co.com/qFgbVVVH/service-provider-project-img.png",
       "https://i.ibb.co.com/qFgbVVVH/service-provider-project-img.png"
     ]
-  }
+  },
+  {
+    id: "4",
+    title: "React Task Manager with JWT",
+    description: "A feature-rich task management system enabling real-time collaboration, authentication, and task tracking for developers and administrators.",
+    longDescription: `
+      This task management system offers a streamlined solution for managing tasks and projects with real-time updates and secure authentication. Key features include:
   
+      - **Admin Features**:
+        - Assign specific users to project access and individual task access.
+        - Manage and organize tasks across multiple columns.
+        - Analyze task and project progress from the admin dashboard.
+  
+      - **Developer/User Features**:
+        - View a personalized dashboard with assigned tasks and progress tracking.
+        - Create, update, and organize tasks using drag-and-drop functionality.
+        - Dynamically create and manage task columns.
+        - Analyze personal productivity and task progress.
+        - Engage in real-time conversations using the built-in chat system.
+  
+      - **Security & Real-Time Features**:
+        - Secure authentication with JWT.
+        - Real-time communication using Socket.IO.
+        - MongoDB for scalable and efficient data storage.
+    `,
+    image: "https://i.ibb.co.com/6J1nhBfH/Task-manager-Project-view-02.png",
+    technologies: ["ReactJS", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "JWT", "Socket.IO"],
+    features: [
+      "Secure authentication using JWT",
+      "Real-time task updates with Socket.IO",
+      "Drag-and-drop task management",
+      "Multi-user role-based access control",
+      "Dynamic task columns for project organization",
+      "Admin dashboard for task and user management",
+      "Real-time chat system for collaboration",
+      "Analytics for task and project progress"
+    ],
+    liveUrl: "https://github.com/coderskamrul/React-Task-Manager-With-JWT",
+    githubUrl: "https://github.com/coderskamrul/React-Task-Manager-With-JWT",
+    category: "React",
+    completionDate: "February 2025",
+    screenshots: [
+      "https://i.ibb.co.com/6J1nhBfH/Task-manager-Project-view-02.png",
+      "https://i.ibb.co.com/6J1nhBfH/Task-manager-Project-view-02.png",
+      "https://i.ibb.co.com/6J1nhBfH/Task-manager-Project-view-02.png"
+    ]
+  },
+  {
+    id: "5",
+    title: "React Portfolio Website",
+    description: "A fully responsive personal portfolio website built with React.js, featuring a blog, services, projects, and contact functionality.",
+    longDescription: `
+      I created my personal portfolio website using React.js, where I explored and learned various technologies, including Bootstrap and Material UI. This project helped me enhance my frontend development skills while making a fully responsive and user-friendly design.
+
+      **Key Features:**
+      
+      - **Home Page**: A dynamic and visually appealing introduction to my portfolio.
+      - **About Page**: Showcases my skills, experience, and background.
+      - **Portfolio Page**: Displays my previous projects with descriptions and live/demo links.
+      - **Services Page**: Lists the professional services I offer.
+      - **Blog Page**: A section to share my technical experiences, learning journey, and project insights.
+      - **Contact Page**: Includes a contact form with email integration to allow visitors to reach out easily.
+      - **Responsive Design**: Fully optimized for mobile, tablet, and desktop screens.
+    `,
+    image: "https://i.ibb.co.com/n87Ppft0/portfolio-react.jpg",
+    technologies: ["ReactJS", "Bootstrap", "Material UI", "Email.js"],
+    features: [
+      "Fully responsive design",
+      "Dynamic portfolio showcasing projects",
+      "Integrated contact form with email functionality",
+      "Blog section for sharing technical experiences",
+      "Modern UI with Material UI and Bootstrap"
+    ],
+    liveUrl: "https://hmdkamrul.netlify.app",
+    githubUrl: "https://github.com/coderskamrul/react-portfolios",
+    category: "React",
+    completionDate: "February 2025",
+    screenshots: [
+      "https://i.ibb.co.com/portfolio-image-1.png",
+      "https://i.ibb.co.com/portfolio-image-2.png",
+      "https://i.ibb.co.com/portfolio-image-3.png"
+    ]
+},
+{
+  id: "6",
+  title: "Blood Bank Management System with Java",
+  description: "A blood bank management system with Java, MySQL, and JavaFX.",
+  longDescription: `
+    This Blood Bank Management System is developed using Java, JavaFX, and MySQL to efficiently manage blood donations, donors, and recipients. It streamlines the process of tracking and managing blood inventory in a centralized database.
+
+    **Key Features:**
+    
+    - **Donor Management**: Register and track donors with their blood type and availability.
+    - **Recipient Management**: Maintain a record of recipients and match them with available blood units.
+    - **Blood Inventory**: Real-time updates on blood stock levels.
+    - **Search & Filtering**: Search donors and blood units based on type and availability.
+    - **User Authentication**: Secure access with login credentials.
+    - **Database Integration**: Stores all records securely using MySQL.
+  `,
+  image: "https://i.ibb.co.com/v4XRHwBC/bloodbank.png",
+  technologies: ["Java", "JavaFX", "MySQL"],
+  features: [
+    "Donor and recipient management",
+    "Real-time blood inventory tracking",
+    "Secure authentication system",
+    "Search and filtering functionalities",
+    "Database integration with MySQL"
+  ],
+  liveUrl: "https://github.com/coderskamrul/Blood-Bank-Management",
+  githubUrl: "https://github.com/coderskamrul/Blood-Bank-Management",
+  category: "Java",
+  completionDate: "February 2025",
+  screenshots: [
+    "https://i.ibb.co.com/v4XRHwBC/bloodbank.png"
+  ]
+},
+
+{
+  id: "7",
+  title: "Hostel Management System Using JavaFX",
+  description: "A hostel management system with Java, MySQL, and JavaFX.",
+  longDescription: `
+    This Hostel Management System is developed using Java, JavaFX, and MySQL to efficiently manage hostel accommodations, tenants, and payments. It provides an organized and automated solution for hostel administrators.
+
+    **Key Features:**
+    
+    - **Tenant Management**: Register and manage hostel tenants with room allocations.
+    - **Room Availability**: Track and update room occupancy status.
+    - **Payment System**: Manage rental payments and generate invoices.
+    - **Search & Filtering**: Search tenants based on name, room number, or payment status.
+    - **User Authentication**: Secure login for administrators and managers.
+    - **Database Integration**: Stores all hostel records securely using MySQL.
+  `,
+  image: "https://i.ibb.co.com/KxXFSXCs/hostel-managment-java.png",
+  technologies: ["Java", "JavaFX", "MySQL"],
+  features: [
+    "Tenant and room management",
+    "Real-time room availability tracking",
+    "Automated payment and invoicing system",
+    "Secure authentication system",
+    "Database integration with MySQL"
+  ],
+  liveUrl: "https://github.com/coderskamrul/Hostel-Management-System-Using-JavaFX",
+  githubUrl: "https://github.com/coderskamrul/Hostel-Management-System-Using-JavaFX",
+  category: "Java",
+  completionDate: "February 2025",
+  screenshots: [
+    "https://i.ibb.co.com/KxXFSXCs/hostel-managment-java.png"
+  ]
+},
+{
+  id: "8",
+  title: "E-Commerce Responsive Website with PHP",
+  description: "A fully functional e-commerce website with PHP, MySQL, and Bootstrap.",
+  longDescription: `
+    This E-Commerce Website is developed using PHP, MySQL, and Bootstrap to provide a seamless online shopping experience. It includes product management, a secure checkout system, and an intuitive user interface.
+
+    **Key Features:**
+    
+    - **Product Management**: Add, update, and manage product listings with images and descriptions.
+    - **User Authentication**: Secure login and registration system for users.
+    - **Shopping Cart**: Add, remove, and update items in the cart before checkout.
+    - **Order Management**: Users can place and track their orders easily.
+    - **Admin Dashboard**: Manage products, orders, and user accounts.
+    - **Responsive Design**: Fully optimized for mobile, tablet, and desktop screens.
+  `,
+  image: "https://i.ibb.co.com/5xTRRNMY/ecommerce-with-php.png",
+  technologies: ["PHP", "MySQL", "Bootstrap"],
+  features: [
+    "Dynamic product management system",
+    "Secure user authentication",
+    "Shopping cart and checkout system",
+    "Admin dashboard for order and user management",
+    "Fully responsive design"
+  ],
+  liveUrl: "https://github.com/coderskamrul/electronics-ecommerce-",
+  githubUrl: "https://github.com/coderskamrul/electronics-ecommerce-",
+  category: "PHP",
+  completionDate: "February 2025",
+  screenshots: [
+    "https://i.ibb.co.com/5xTRRNMY/ecommerce-with-php.png"
+  ]
+}
+
 ]
 
 export const getProject = (id: string) => {
