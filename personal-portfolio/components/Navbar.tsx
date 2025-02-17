@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { useTheme } from 'next-themes';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,6 +14,8 @@ const Navbar = () => {
   // Handle mounting for theme
   useEffect(() => {
     setMounted(true);
+    setTheme('dark');
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Handle scroll effect
@@ -51,7 +54,7 @@ const Navbar = () => {
 
         {/* Mobile menu button */}
         <div className="flex items-center gap-4 lg:hidden">
-          {mounted && (
+            {mounted && (
             <button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               className="p-2 text-foreground rounded-lg hover:bg-accent"
@@ -74,12 +77,12 @@ const Navbar = () => {
           <ul className="flex items-center space-x-8">
             {menuItems.map((item) => (
               <li key={item.label}>
-                <a
+                <Link
                   href={item.href}
                   className="block py-2 text-foreground hover:text-primary transition-colors"
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

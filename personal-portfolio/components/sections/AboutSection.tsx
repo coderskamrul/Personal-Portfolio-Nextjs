@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Instagram, Linkedin, Palette, Database, Server, Box, Facebook, Twitter, Codepen } from 'lucide-react';
+import { Github, Instagram, Linkedin, Palette, Database, Server, Box, Facebook, Twitter, Codepen, Youtube } from 'lucide-react';
 import Image from 'next/image';
 
 const ProfileCard = () => {
@@ -63,6 +63,9 @@ const ProfileCard = () => {
                   </a>
                   <a href="https://codepen.io/CodersKamrul" className="hover:scale-110 transition-transform">
                     <Codepen className="w-5 h-5 text-muted-foreground hover:text-primary" />
+                  </a>
+                  <a href="https://www.youtube.com/@coderskamrul" className="hover:scale-110 transition-transform">
+                    <Youtube className="w-5 h-5 text-muted-foreground hover:text-primary" />
                   </a>
                 </div>
               </div>

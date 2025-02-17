@@ -13,7 +13,7 @@ const certifications = [
   },
   {
     title: "The 2023 ICPC Asia Dhaka Regional Contest",
-    image: "https://media.licdn.com/dms/image/v2/D562DAQGHjO_PpJMecA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1701409627311?e=1738936800&v=beta&t=4g7X0TBcrACkciYQP-qxT4o77Y8T5ssBtEddwdNMYJw",
+    image: "https://i.ibb.co.com/PZRwbmSW/icpc-2023.jpg",
   },
   {
     title: "The 2023 ICPC Asia West Continent Final Contest",

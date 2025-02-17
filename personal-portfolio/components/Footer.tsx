@@ -1,129 +1,95 @@
-import { Code2, Facebook, Github, Linkedin, Mail, MapPin, Phone, Twitter } from 'lucide-react'
-import Link from 'next/link'
+'use client'
+import { useState } from 'react';
+import { Github, Instagram, Linkedin, Facebook, Twitter, Youtube, Codepen } from 'lucide-react';
+import Link from 'next/link';
 
-const navigation = {
-  codding: [
-    { name: 'Codeforces', href: '/' },
-    { name: 'Codechef', href: '/' },
-    { name: 'Leetcode', href: '/' },
-    { name: 'Stopstalk', href: '/' },
-    { name: 'Hackkerank', href: '/' },
-  ],
-  main: [
-    { name: 'Blog', href: '/blog' },
-    { name: 'Skills', href: '/skills' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
-  ],
-  social: [
-    {
-      name: 'GitHub',
-      href: 'https://github.com/coderskamrul',
-      icon: Github,
-    },
-    {
-      name: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/coderskamrul/',
-      icon: Linkedin,
-    },
-    {
-      name: 'Twitter',
-      href: 'https://x.com/CodersKamrul',
-      icon: Twitter,
-    },
-    {
-      name: 'Facebook',
-      href: 'https://www.facebook.com/CodersKamrul/',
-      icon: Facebook,
-    },
-  ],
-}
+const socials = [
+  { name: 'Facebook', href: 'https://www.facebook.com/CodersKamrul', icon: <Facebook className="w-5 h-5 text-muted-foreground hover:text-primary" /> },
+  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/coderskamrul/', icon: <Linkedin className="w-5 h-5 text-muted-foreground hover:text-primary" /> },
+  { name: 'Twitter', href: 'https://x.com/CodersKamrul', icon: <Twitter className="w-5 h-5 text-muted-foreground hover:text-primary" /> },
+  { name: 'Instagram', href: 'https://www.instagram.com/coderskamrul', icon: <Instagram className="w-5 h-5 text-muted-foreground hover:text-primary" /> },
+  { name: 'Github', href: 'https://github.com/coderskamrul', icon: <Github className="w-5 h-5 text-muted-foreground hover:text-primary" /> },
+  { name: 'Codepen', href: 'https://codepen.io/CodersKamrul', icon: <Codepen className="w-5 h-5 text-muted-foreground hover:text-primary" /> },
+  { name: 'YouTube', href: 'https://www.youtube.com/@coderskamrul', icon: <Youtube className="w-5 h-5 text-muted-foreground hover:text-primary" /> },
+];
 
-export default function Footer() {
+const navLinks = [
+  { name: 'Home', href: '/' },
+  { name: 'Blog', href: 'blog' },
+  { name: 'Skills', href: 'skills' },
+  { name: 'Projects', href: 'projects' },
+  { name: 'About', href: 'about' },
+  { name: 'Contact', href: 'contact' },
+];
+
+const Footer = () => {
+  const [theme, setTheme] = useState('light');
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    document.documentElement.classList.toggle('dark');
+  };
+
   return (
-    <footer className="bg-background">
-      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8 m-auto">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
-          {/* Logo and About */}
-          <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2">
-              <Code2 className="h-8 w-8" />
-              <span className="font-bold text-xl">Portfolio</span>
-            </Link>
-            <p className="text-muted-foreground text-justify">
-            I have solved 1,500+ problems focused on Data Structures and Algorithms (DSA) and Object-Oriented Programming (OOP). I have actively participated in national and international programming contests, including the prestigious ACM ICPC, achieving recognition as an ICPC Asia West Finalist in 2023.            </p>
-          </div>
+    <div className="w-full bg-[#f3f3f3] text-foreground dark:bg-[#040b1e] dark:text-white">
+      <div className="container mx-auto px-4 py-8">
+        {/* Footer Content */}
+        <div className="flex flex-col items-center space-y-6">
+          {/* <h1 className="text-4xl md:text-5xl font-bold">Mystery Code</h1> */}
+          
+          {/* Description */}
+          {/* <p className="text-center text-sm md:text-base max-w-2xl">
+            Mystery Code is a blog website where you will find great tutorials on web design
+            and development. Here each tutorial is beautifully described step by step with
+            the required source code.
+          </p> */}
+          
 
-       
-
-          {/* Quick Links */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Judge Links</h3>
-            <nav className="flex flex-col space-y-2">
-              {navigation.codding.map((item) => (
+          
+          {/* Navigation */}
+          <nav className="flex flex-wrap justify-center gap-4">
+            {navLinks.map((link) => (
                 <Link
-                  key={item.name}
-                  href={item.href}
-                  className="text-muted-foreground hover:text-primary"
+                key={link.name}
+                href={link.href}
+                className="px-4 py-2 rounded-full border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
                 >
-                  {item.name}
+                {link.name}
                 </Link>
-              ))}
-            </nav>
+            ))}
+          </nav>
+          
+          {/* Social Links */}
+          <div className="flex space-x-4">
+            {socials.map((social) => (
+              <a
+                key={social.name}
+                href={social.href}
+                className="p-2 rounded-full border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                aria-label={social.name}
+              >
+                {social.icon}
+              </a>
+            ))}
           </div>
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Quick Links</h3>
-            <nav className="flex flex-col space-y-2">
-              {navigation.main.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="text-muted-foreground hover:text-primary"
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </nav>
-          </div>
-
-             {/* Contact Info */}
-             <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Contact Info</h3>
-            <div className="space-y-2">
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Mail className="h-4 w-4" />
-                <span>mdkamrul2058@gmail.com</span>
-              </div>
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Phone className="h-4 w-4" />
-                <span>+880 1635499809</span>
-              </div>
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <MapPin className="h-4 w-4" />
-                <span>Uttara, Dhaka, Bangladesh</span>
-              </div>
-            </div>
-          </div>
-
+          {/* Theme Toggle */}
+          {/* <button
+            onClick={toggleTheme}
+            className="p-2 rounded-full border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            aria-label="Toggle theme"
+          >
+            {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
+          </button> */}
         </div>
-
-        <div className="mt-10 flex justify-center space-x-10">
-          {navigation.social.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className="text-muted-foreground hover:text-primary"
-            >
-              <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
-            </Link>
-          ))}
-        </div>
-        <p className="mt-10 text-center text-xs leading-5 text-muted-foreground">
-          &copy; {new Date().getFullYear()} Portfolio. All rights reserved.
-        </p>
       </div>
-    </footer>
-  )
-}
+      
+      {/* Footer Credits */}
+      <div className="text-center py-4 text-sm">
+        Develop By - <a href="#" className="text-blue-500">Hmd Kamrul</a>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;
