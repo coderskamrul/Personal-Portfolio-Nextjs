@@ -100,7 +100,7 @@ const Navbar = () => {
             </button>
           )}
           <a
-            href="/cv"
+            href="https://drive.google.com/uc?export=download&id=1mcYpSBYUMLs12799QQhaEABnl6tS737r"
             className="px-4 py-2 text-primary-foreground bg-primary rounded-lg hover:bg-primary/90 transition-colors"
           >
             Download CV

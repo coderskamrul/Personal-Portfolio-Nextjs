@@ -20,6 +20,8 @@ const navLinks = [
   { name: 'Projects', href: 'projects' },
   { name: 'About', href: 'about' },
   { name: 'Contact', href: 'contact' },
+  { name: 'Awards', href: 'awards' },
+  { name: 'Certificates', href: 'certificates' },
 ];
 
 const Footer = () => {

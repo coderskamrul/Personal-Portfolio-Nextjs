@@ -133,7 +133,7 @@ export default function SingleBlog({ params }: { params: { slug: string } }) {
                 <h3 className="text-xl font-semibold mb-4">About the Author</h3>
                 <Link href={`/author/${post.author.toLowerCase().replace(/\s+/g, '-')}`} className="flex items-center gap-4 mb-4">
                   <Image
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?fit=crop&w=150&h=150"
+                    src="https://i.ibb.co.com/whRrmF0J/hmdkamrul-profile.jpg"
                     alt={post.author}
                     width={60}
                     height={60}
@@ -141,7 +141,7 @@ export default function SingleBlog({ params }: { params: { slug: string } }) {
                   />
                   <div>
                     <h4 className="font-semibold">{post.author}</h4>
-                    <p className="text-sm text-muted-foreground">Full Stack Developer</p>
+                    <p className="text-sm text-muted-foreground">Full Stack Software Engineer</p>
                   </div>
                 </Link>
               </div>

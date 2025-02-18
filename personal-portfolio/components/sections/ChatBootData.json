@@ -30,6 +30,7 @@
   {
     "patterns": [
       "\\beducation\\b",
+      "\\bedu...\\b",
       "\\bstudy\\b",
       "\\bdegree\\b",
       "\\bcgpa\\b",

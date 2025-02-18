@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 const skillCategories = [
   {
     title: "Languages",
-    skills: ["C++", "Python", "JavaScript", "TypeScript", "PHP"],
+    skills: ["C", "C++", "Java", "C#", "Python", "JavaScript", "TypeScript", "PHP"],
   },
   {
     title: "Frontend",
@@ -13,7 +13,7 @@ const skillCategories = [
   },
   {
     title: "Backend",
-    skills: ["FastAPI", "Express.js", "Node.js", "Firebase", "NoSQL"],
+    skills: ["FastAPI", "Express.js", "Node.js", "Firebase", "NoSQL", "SQL", "MongoDB"],
   },
   {
     title: "DevOps",

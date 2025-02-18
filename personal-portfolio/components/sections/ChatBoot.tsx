@@ -221,7 +221,7 @@ const PortfolioAIChat = () => {
   };
 
   const suggestionTags = [
-    "Skills", "Experience", "Edu...", "Achievements"
+    "Skills", "Experience", "Achievements"
   ];
 
   interface Message {

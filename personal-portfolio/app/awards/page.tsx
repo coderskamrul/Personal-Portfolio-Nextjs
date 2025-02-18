@@ -1,10 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight } from "lucide-react"
 import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
 
 
 const awards = [
@@ -62,21 +59,6 @@ export default function AwardsSection() {
             </motion.div>
           ))}
         </div>
-
-        <motion.div 
-          className="mt-12 text-center"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          viewport={{ once: true }}
-        >
-        <Link className="m-auto" href="/awards">
-          <Button size="lg" className="group">
-            View All Awards
-            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </Button>
-        </Link>
-        </motion.div>
       </div>
     </section>
   )
